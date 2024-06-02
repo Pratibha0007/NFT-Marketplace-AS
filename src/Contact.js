@@ -1,13 +1,13 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React from "react";
+import Navbar from "./Navbar";
 
 const Contact = () => {
   return (
     <div>
-        <Navbar />
-        <h1>Contact</h1>
+      <Navbar />
+      <h1>Contact</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
