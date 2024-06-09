@@ -1,5 +1,4 @@
 // Import the functions you need from the SDKs you need
-import { getAnalytics } from "firebase/analytics";
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
@@ -22,10 +21,4 @@ const firebaseConfig = {
 // const auth = getAuth();
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const auth = getAuth();
-
-// Set the language code to the user's device language
-auth.useDeviceLanguage();
-
-export { auth };
+export const auth = getAuth(app);
